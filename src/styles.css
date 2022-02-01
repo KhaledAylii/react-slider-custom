@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  height: minmax(100vh, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+}
+
+.carouselContainer {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 10px solid black;
+  overflow: hidden;
+}
+
+.carouselInner {
+  transform: translateX(-90%);
+  width: calc(100%);
+  height: calc(100%);
+  display: flex;
+  flex-direction: row;
+}
+
+.slide:nth-child(odd) {
+  background-color: blue;
+}
+
+.slide:nth-child(2n) {
+  background-color: #ececec;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
